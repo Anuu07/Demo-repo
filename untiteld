@@ -1,0 +1,75 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "69c88e14-6bb6-40a5-948f-1f772e7c2d39",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'null' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mNameError\u001b[39m                                 Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[1]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m \u001b[38;5;28;01mimport\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[34;01mpywhatkit\u001b[39;00m\n\u001b[32m      2\u001b[39m \u001b[38;5;28;01mfrom\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[34;01mdatetime\u001b[39;00m\u001b[38;5;250m \u001b[39m\u001b[38;5;28;01mimport\u001b[39;00m datetime\n\u001b[32m      4\u001b[39m now = datetime.now()\n",
+      "\u001b[36mFile \u001b[39m\u001b[32mE:\\mypyprogs\\pywhatkit.py:5\u001b[39m\n\u001b[32m      1\u001b[39m {\n\u001b[32m      2\u001b[39m  \u001b[33m\"\u001b[39m\u001b[33mcells\u001b[39m\u001b[33m\"\u001b[39m: [\n\u001b[32m      3\u001b[39m   {\n\u001b[32m      4\u001b[39m    \u001b[33m\"\u001b[39m\u001b[33mcell_type\u001b[39m\u001b[33m\"\u001b[39m: \u001b[33m\"\u001b[39m\u001b[33mcode\u001b[39m\u001b[33m\"\u001b[39m,\n\u001b[32m----> \u001b[39m\u001b[32m5\u001b[39m    \u001b[33m\"\u001b[39m\u001b[33mexecution_count\u001b[39m\u001b[33m\"\u001b[39m: \u001b[43mnull\u001b[49m,\n\u001b[32m      6\u001b[39m    \u001b[33m\"\u001b[39m\u001b[33mid\u001b[39m\u001b[33m\"\u001b[39m: \u001b[33m\"\u001b[39m\u001b[33m69c88e14-6bb6-40a5-948f-1f772e7c2d39\u001b[39m\u001b[33m\"\u001b[39m,\n\u001b[32m      7\u001b[39m    \u001b[33m\"\u001b[39m\u001b[33mmetadata\u001b[39m\u001b[33m\"\u001b[39m: {},\n\u001b[32m      8\u001b[39m    \u001b[33m\"\u001b[39m\u001b[33moutputs\u001b[39m\u001b[33m\"\u001b[39m: [],\n\u001b[32m      9\u001b[39m    \u001b[33m\"\u001b[39m\u001b[33msource\u001b[39m\u001b[33m\"\u001b[39m: []\n\u001b[32m     10\u001b[39m   }\n\u001b[32m     11\u001b[39m  ],\n\u001b[32m     12\u001b[39m  \u001b[33m\"\u001b[39m\u001b[33mmetadata\u001b[39m\u001b[33m\"\u001b[39m: {\n\u001b[32m     13\u001b[39m   \u001b[33m\"\u001b[39m\u001b[33mkernelspec\u001b[39m\u001b[33m\"\u001b[39m: {\n\u001b[32m     14\u001b[39m    \u001b[33m\"\u001b[39m\u001b[33mdisplay_name\u001b[39m\u001b[33m\"\u001b[39m: \u001b[33m\"\u001b[39m\u001b[33m\"\u001b[39m,\n\u001b[32m     15\u001b[39m    \u001b[33m\"\u001b[39m\u001b[33mname\u001b[39m\u001b[33m\"\u001b[39m: \u001b[33m\"\u001b[39m\u001b[33m\"\u001b[39m\n\u001b[32m     16\u001b[39m   },\n\u001b[32m     17\u001b[39m   \u001b[33m\"\u001b[39m\u001b[33mlanguage_info\u001b[39m\u001b[33m\"\u001b[39m: {\n\u001b[32m     18\u001b[39m    \u001b[33m\"\u001b[39m\u001b[33mname\u001b[39m\u001b[33m\"\u001b[39m: \u001b[33m\"\u001b[39m\u001b[33m\"\u001b[39m\n\u001b[32m     19\u001b[39m   }\n\u001b[32m     20\u001b[39m  },\n\u001b[32m     21\u001b[39m  \u001b[33m\"\u001b[39m\u001b[33mnbformat\u001b[39m\u001b[33m\"\u001b[39m: \u001b[32m4\u001b[39m,\n\u001b[32m     22\u001b[39m  \u001b[33m\"\u001b[39m\u001b[33mnbformat_minor\u001b[39m\u001b[33m\"\u001b[39m: \u001b[32m5\u001b[39m\n\u001b[32m     23\u001b[39m }\n",
+      "\u001b[31mNameError\u001b[39m: name 'null' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "import pywhatkit\n",
+    "from datetime import datetime\n",
+    "\n",
+    "now = datetime.now()\n",
+    "\n",
+    "chour = now.strftime(\"%H\")\n",
+    "mobile = input('Enter Mobile No of Receiver : ')\n",
+    "message = input('Enter Message you want to send : ')\n",
+    "hour = int(input('Enter hour : '))\n",
+    "minute = int(input('Enter minute : '))\n",
+    "\n",
+    "# Send the text message\n",
+    "pywhatkit.sendwhatmsg(mobile, message, hour, minute)\n",
+    "\n",
+    "# Optionally, send a file (image in this case)\n",
+    "send_file = input('Do you want to send a file? (yes/no): ').strip().lower()\n",
+    "if send_file == 'yes':\n",
+    "    file_path = input('Enter the full path of the file (image) to send: ')\n",
+    "    caption = input('Enter a caption for the file: ')\n",
+    "    pywhatkit.sendwhats_image(mobile, file_path, caption)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5bb2cb2b-fca4-4c83-ba18-4aa7740dd312",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

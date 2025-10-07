@@ -1,0 +1,346 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "247ed760-e049-46a1-a8ee-e1d64f04abe5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "File Name abc.txt\n",
+      "File Mode w\n",
+      "Is File Readable: False\n",
+      "Is File Writable: True\n",
+      "Is File Closed: False\n",
+      "Is File Closed: True\n"
+     ]
+    }
+   ],
+   "source": [
+    "f=open(\"abc.txt\",'w')\n",
+    "print(\"File Name\",f.name)\n",
+    "print(\"File Mode\",f.mode)\n",
+    "print(\"Is File Readable:\",f.readable())\n",
+    "print(\"Is File Writable:\",f.writable())\n",
+    "print(\"Is File Closed:\",f.closed)\n",
+    "f.close()\n",
+    "print(\"Is File Closed:\",f.closed)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "3a1ae047-cbb9-4a1f-a2c6-65f170a12ba7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Data written to the file successfully\n"
+     ]
+    }
+   ],
+   "source": [
+    "f=open(\"abcd.txt\",'w')\n",
+    "f.write(\"Sam\\n\")\n",
+    "f.write(\"Software\\n\")\n",
+    "f.write(\"Solutions\\n\")\n",
+    "print(\"Data written to the file successfully\")\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "7aa3ec0d-124b-46ef-b742-47452ad25653",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Data written to the file successfully\n"
+     ]
+    }
+   ],
+   "source": [
+    "f=open(\"abcd.txt\",'a')\n",
+    "f.write(\"Sam\\n\")\n",
+    "f.write(\"Software\\n\")\n",
+    "f.write(\"Solutions\\n\")\n",
+    "print(\"Data written to the file successfully\")\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "b0beeb29-48c1-4172-958f-9728d50d5d78",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List of lines written to the file successfully\n"
+     ]
+    }
+   ],
+   "source": [
+    "f=open(\"abcd.txt\",'w')\n",
+    "list=[\"sunny\\n\",\"bunny\\n\",\"vinny\\n\",\"chinny\"]\n",
+    "f.writelines(list)\n",
+    "print(\"List of lines written to the file successfully\")\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "623be50c-1e10-4bc2-bac0-85765dda7de7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sunny\n",
+      "bunny\n",
+      "vinny\n",
+      "chinny\n"
+     ]
+    }
+   ],
+   "source": [
+    "f=open(\"abcd.txt\",'r')\n",
+    "data=f.read()\n",
+    "print(data)\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "773c46e3-bde3-45da-9108-5c201b9a4b3b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sunny\n",
+      "bunn\n"
+     ]
+    }
+   ],
+   "source": [
+    "f=open(\"abcd.txt\",'r')\n",
+    "data=f.read(10)\n",
+    "print(data)\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "a95045ac-76de-410a-bf29-c55cd02dea17",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sunny\n",
+      "bunny\n",
+      "vinny\n"
+     ]
+    }
+   ],
+   "source": [
+    "f=open(\"abcd.txt\",'r')\n",
+    "line1=f.readline()\n",
+    "print(line1,end='')\n",
+    "line2=f.readline()\n",
+    "print(line2,end='')\n",
+    "line3=f.readline()\n",
+    "print(line3,end='')\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "3f4259f2-1290-4797-8301-338fd0d8c3a9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sunny\n",
+      "bunny\n",
+      "vinny\n",
+      "chinny"
+     ]
+    }
+   ],
+   "source": [
+    "f=open(\"abcd.txt\",'r')\n",
+    "lines=f.readlines()\n",
+    "for line in lines:\n",
+    "    print(line,end='')\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "0ee521cc-4a1f-4887-9201-f849d7bf0442",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "sun\n",
+      "ny\n",
+      "\n",
+      "bunn\n",
+      "Remaining data\n",
+      "y\n",
+      "vinny\n",
+      "chinny\n"
+     ]
+    }
+   ],
+   "source": [
+    "f=open(\"abcd.txt\",'r')\n",
+    "print(f.read(3))\n",
+    "print(f.readline())\n",
+    "print(f.read(4))\n",
+    "print(\"Remaining data\")\n",
+    "print(f.read())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "1f2fdfa0-cdf6-4a23-9846-6198c7df7c80",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Is file closed: False\n",
+      "Is file closed: True\n"
+     ]
+    }
+   ],
+   "source": [
+    "with open(\"abcd.txt\",'w') as f:\n",
+    "    f.write(\"Sam\\n\")\n",
+    "    f.write(\"Software\\n\")\n",
+    "    f.write(\"S0lutions\\n\")\n",
+    "    print(\"Is file closed:\",f.closed)\n",
+    "print(\"Is file closed:\",f.closed)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "d9eabafe-4250-4e2b-b294-af8472df4762",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "Sa\n",
+      "2\n",
+      "m\n",
+      "Software\n",
+      "S0lutions\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "f=open(\"abcd.txt\",\"r\")\n",
+    "print(f.tell())\n",
+    "print(f.read(2))\n",
+    "print(f.tell())\n",
+    "print(f.read())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "bf86bf7c-f011-445d-b1cc-445cfd91eb2b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "All Students are Smart\n",
+      "The Current Cursor Position: 22\n",
+      "The Current Cursor Position: 17\n",
+      "Data After Modefication:\n",
+      "All Students are GEMS!!!\n"
+     ]
+    }
+   ],
+   "source": [
+    "data=\"All Students are Smart\"\n",
+    "f=open(\"abcd.txt\",\"w\")\n",
+    "f.write(data)\n",
+    "with open(\"abcd.txt\",\"r+\")as f:\n",
+    "    text=f.read()\n",
+    "    print(text)\n",
+    "    print(\"The Current Cursor Position:\",f.tell())\n",
+    "    f.seek(17)\n",
+    "    print(\"The Current Cursor Position:\",f.tell())\n",
+    "    f.write(\"GEMS!!!\")\n",
+    "    f.seek(0)\n",
+    "    text=f.read()\n",
+    "    print(\"Data After Modefication:\")\n",
+    "    print(text)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "36a6a316-83ce-4b8f-b947-7e64b08914e9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

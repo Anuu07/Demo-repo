@@ -1,0 +1,45 @@
+// AI in Cloud Data Analytics
+digraph {
+	AI [label="Artificial Intelligence (AI)"]
+	ML [label="Machine Learning (ML)"]
+	DL [label="Deep Learning"]
+	LLM [label="Large Language Models (LLMs)"]
+	GenAI [label="Generative AI (GenAI)"]
+	AI -> ML
+	AI -> DL
+	DL -> LLM
+	DL -> GenAI
+	Supervised [label="Supervised Learning
+(Labeled Data)"]
+	Unsupervised [label="Unsupervised Learning
+(Unlabeled Data)"]
+	ML -> Supervised
+	ML -> Unsupervised
+	SemiSupervised [label="Semi-supervised Learning"]
+	DL -> SemiSupervised
+	LLMTasks [label="Tasks:
+- Text generation
+- Summarization
+- Q&A"]
+	LLM -> LLMTasks
+	GenAITypes [label="Types:
+- Text-to-Text
+- Text-to-Image
+- Text-to-Video
+- Text-to-Task
+- Multimodal"]
+	GenAIUses [label="Uses:
+- Chatbots
+- Predictive Modeling
+- Data Cleaning
+- Custom Analytics"]
+	GenAI -> GenAITypes
+	GenAI -> GenAIUses
+	Considerations [label="Considerations:
+- Data Quality
+- Ethics & Privacy
+- Human Oversight"]
+	GenAI -> Considerations
+	CloudUse [label="GenAI in Cloud Data Analytics"]
+	GenAI -> CloudUse
+}
